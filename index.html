@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+
+    <style>
+        body {
+            background: white;
+            margin: auto;
+        }
+
+        .read {
+            color: red;
+            text-align: end;
+        }
+
+        .header {
+            background: black;
+
+            height: 50px;
+            padding: 10px 5% 10px 5%;
+            display: block;
+
+        }
+
+        @media(max-width:358px) {
+            .header {
+                display: block;
+                height: 80px;
+            }
+        }
+
+        .form {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+        }
+
+
+        .form img {
+            height: 23px;
+            width: 85px;
+        }
+
+        .nav {
+            display: flex;
+            background-color: white;
+            color: black;
+            height: 20px;
+        }
+
+        .nav1 {
+            padding-left: 10px;
+
+        }
+
+        .nav2 {
+            padding-left: 10px;
+        }
+
+        .nav3 {
+            padding-left: 10px;
+        }
+
+
+
+        .content1 {
+            padding: 10px 5% 10px 5%;
+            display: flex;
+        }
+
+        @media(max-width:360px) {
+            .content1 {
+                display: block;
+            }
+        }
+
+        @media(min-width:361px) and (max-width:375px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:376px) and (max-width:415px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:416px) and (max-width:768px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:769px) and (max-width:800px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+
+        .content1 img {
+            height: 175px;
+            width: 600px;
+            margin-left: 5px;
+        }
+
+        @media(max-width:360px) {
+            .content1 img {
+                display: block;
+                height: 150px;
+                width: 315px;
+            }
+        }
+
+        @media(min-width:361px) and (max-width:375px) {
+            .content1 img {
+                display: block;
+                height: 410px;
+                width: 130px;
+            }
+        }
+
+        @media(min-width:376px) and (max-width:414px) {
+            .content1 img {
+                display: block;
+                height: 400px;
+                width: 150px;
+            }
+        }
+
+        @media(min-width:415px) and (max-width:768px) {
+            .content1 img {
+                display: block;
+                height: 300px;
+                width: 150px;
+            }
+        }
+
+        @media(min-width:769px) and (max-width:800px) {
+            .content1 img {
+                display: block;
+                height: 300px;
+                width: 200px;
+            }
+        }
+
+        .form1 {
+            /* padding: 5px; */
+            background-color: black;
+            /* line-height: 3px; */
+            color: white;
+            text-align: start;
+        }
+
+
+        .content2 {
+
+            display: flex;
+            padding: 10px 5% 10px 5%;
+            /* margin: auto; */
+        }
+
+        @media(max-width:360px) {
+            .content3 {
+                display: block;
+
+            }
+        }
+
+        @media(min-width:361px) and (max-width:375px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:376px) and (max-width:414px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:416px) and (max-width:800px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+
+        .form2 {
+            width: 451px;
+            margin: auto;
+            /* line-height: 2px; */
+            text-align: start;
+
+
+        }
+
+
+        .content2 img {
+
+            height: 112px;
+            width: 251px;
+        }
+
+
+        @media(max-width:360px) {
+            .content2 img {
+                display: block;
+
+                width: 100px;
+                height: 50px;
+                margin: 5px;
+            }
+        }
+
+        @media(min-width:360px) and (max-width:375px) {
+            .content2 img {
+                display: block;
+                width: 190px;
+                height: 60px;
+                margin: 4px;
+
+            }
+        }
+
+        @media(min-width:376px) and (max-width:414px) {
+            .content2 img {
+                display: block;
+                width: 90px;
+                height: 40px;
+                margin: 5px;
+
+            }
+        }
+
+        @media(min-width:416px) and (max-width:768px) {
+            .content2 img {
+                display: block;
+                width: 90px;
+                height: 40px;
+                margin: 5px;
+
+            }
+        }
+
+        @media(min-width:769px) and (max-width:800px) {
+            .content2 img {
+                display: block;
+                width: 90px;
+                height: 40px;
+                margin: 5px;
+
+            }
+        }
+
+        .content3 {
+
+            display: flex;
+            padding: 10px 5% 10px 5%;
+        }
+
+        @media(max-width:360px) {
+            .content3 {
+                display: block;
+
+            }
+        }
+
+        @media(min-width:360px) and (max-width:375px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:376px) and (max-width:414px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+        @media(min-width:415px) and (max-width:768px) {
+            .content3 {
+                display: block;
+            }
+        }
+        @media(min-width:369px) and (max-width:800px) {
+            .content3 {
+                display: block;
+            }
+        }
+
+
+        .form2A {
+
+            color: black;
+            text-align: center;
+            /* line-height: 1px; */
+
+        }
+
+        .form2B {
+
+            color: black;
+            text-align: center;
+            line-height: 2px;
+            /* margin: auto; */
+            margin-right: 40px;
+        }
+
+
+        .form2C {
+
+            display: flex;
+        }
+
+        .form2CA {
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* line-height: 1px; */
+            /* margin-left: 15px;
+            margin-top: 35px; */
+
+
+        }
+
+        .form2C img {
+            height: 180px;
+            width: 160px;
+
+        }
+
+        .center {
+            text-align: center;
+            background: black;
+
+            height: 12px;
+            padding: 10px 5% 10px 5%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="form">
+            <img src="image/cafe3.jpg" alt="">
+            <form>
+                <input type="text" name="search" id="search" placeholder="search this website">
+                <button>submit now</button>
+            </form>
+        </div>
+        <div class="nav">
+            <li style="display:inline;">home</li>
+            <div class="nav1">
+                <li style="display:inline;">about</li>
+            </div>
+            <div class="nav1">
+                <li style="display:inline;">servics</li>
+            </div>
+            <div class="nav3">
+                <li style="display:inline;">contact us</li>
+            </div>
+            </ul>
+        </div>
+    </div>
+    <div class="content1">
+        <div class="form1">
+            <h2>Gabru Cafe.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem adipisicing elit.lorem lorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem adipisicing lorem elit adipisicing el
+                Lorem ipsum dolor sit amet consectetur loren adipisicing elit.lorem adipisicing elit.lorem adip
+                Lorem ipsum dolor sit amet lorem consectetur adipisicing elit.lorem adipisicing
+                Lorem ipsum dolor sit amet adipisicing elit.lorem adipisicing</p>
+            <p class="read">read more></p>
+        </div>
+        <img src="image/cafe1.jpg" alt="">
+    </div>
+    <div class="content2">
+        <div class="form2">
+            <p>Lorem ipsum dolor Lorem ipsum dolor sit sit
+                Lorem ipsum dolor Lorem ipsum dolor sit amet s
+                Lorem ipsum dolor Lorem ipsum dolor sit amet s
+            </p>
+            <p class="read">read more></p>
+        </div>
+        <div>
+            <img src="image/cafe6.jpg" alt="">
+            <img src="image/cafe4.jpg" alt="">
+            <img src="image/cafe5.jpg" alt="">
+        </div>
+    </div>
+    <hr>
+    <div class="content3">
+        <div class="form2A">
+            <h4> FROM THE BLOG</h4>
+            <h4>Post Title</h4>
+            <p> Lorem ipsum dolor komal Lorem, ipsum dolor.
+                Lorem ipsum dolor.komal Lorem, ipsum dolor.
+                Lorem ipsum dolor komal Lorem, ipsum dolor.
+                Lorem ipsum dolor komal Lorem, ipsum dolor.
+                Lorem ipsum dolor.komal Lorem, ipsum dolor.</p>
+        </div>
+
+        <div class="form2B">
+            <h4>QUICK LINK</h4>
+            <ul>
+                <p>instagram</p>
+                <hr>
+                <p>facebook</p>
+                <hr>
+                <p>whatapp</p>
+                <hr>
+                <p>twittar</p>
+            </ul>
+        </div>
+
+        <div class="form2C">
+            <div>
+
+                <img src="image/cafe.jpg" alt="">
+            </div>
+            <div class="form2CA">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis
+                    Lorem ipsum dolor sit amet,
+                </p>
+                <p class="read">read more></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="center">
+            copyright &copy; www.cafegabru.com.all rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
